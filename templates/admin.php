@@ -1,6 +1,6 @@
 <div class="wrap">
 	<h2>Top / Bottom Content Settings</h2>
-	<p>Enter your oLark API key. If the API key exists, the oLark code will be inserted into your footer.</p>
+	<p>Easily add content to the top and bottom of posts.</p>
 	<form action="options.php" method="POST">
 		<?php settings_fields('tbc_options'); ?>
 		<?php do_settings_sections('tbc_options'); ?>

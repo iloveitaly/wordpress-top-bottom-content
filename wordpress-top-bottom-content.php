@@ -53,12 +53,12 @@ function tbc_add_content($content) {
 
 		if(!empty($top_content)) {
 			$top_content = do_shortcode($top_content);
-			$content = $top_content . $content;
+			$content = "<div class='tbc-top-content'>" . $top_content . "</div>" . $content;
 		}
 
 		if(!empty($bottom_content)) {
 			$bottom_content = do_shortcode($bottom_content);
-			$content = $content . $bottom_content;
+			$content = $content . "<div class='tbc-bottom-content'>" . $bottom_content . "</div>";
 		}
 	}
 
